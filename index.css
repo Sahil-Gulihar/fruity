@@ -1,0 +1,187 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("images/fbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+#fruitlogo {
+  display: block;
+  width: 500px;
+  height: 200px;
+  padding-bottom: 100px;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 50px;
+  gap: 50px;
+}
+#singlePlayer {
+  display: block;
+  width: 200px;
+  height: 100;
+  background: none;
+  border: none;
+
+  img {
+    width: 200px;
+    height: 100;
+    border-radius: 30px;
+    opacity: 0.9;
+  }
+
+  &:hover {
+    width: 300;
+    height: 150;
+    img {
+      width: 300px;
+      height: 150;
+      opacity: 1;
+    }
+  }
+}
+#multiPlayer {
+  display: block;
+  background: none;
+  border: none;
+  width: 200px;
+  height: 100;
+
+  img {
+    width: 200px;
+    height: 100;
+    border-radius: 30px;
+    opacity: 0.9;
+  }
+  &:hover {
+    width: 300;
+    height: 150;
+    img {
+      width: 300px;
+      height: 150;
+      opacity: 1;
+    }
+  }
+}
+
+
+
+#gameModePopup button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%; /* Circular shape */
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+}
+
+
+
+#singleplayerBtn , #multiplayerBtn {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure the image covers the button area */
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#defaultCanvas0 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+
+/*#singleplayerBtn {
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%; 
+  overflow: hidden;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+
+  width: 400px; 
+  height: 400px;
+  z-index: 100;
+  right: 350px;
+  top: 190px;
+  background-repeat: no-repeat;
+  /* Defaul button size */
+/* } */ 
+
+/* #multiplayerBtn {
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%; /* Circular shape */
+  /* overflow: hidden;
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  /* justify-content: center; /* Center the image horizontally */
+  /* width: 500px; /* Larger size for multiplayer button */
+  /* height: 500px; */
+  /* top: 150px; */
+  /* left: 300px; Larger size for multiplayer button */ */
+/* } */ */ */ */
+
+.rotating-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure the image covers the button area */
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
